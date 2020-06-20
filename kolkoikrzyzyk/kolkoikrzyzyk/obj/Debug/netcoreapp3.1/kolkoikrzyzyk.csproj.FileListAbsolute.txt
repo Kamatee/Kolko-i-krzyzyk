@@ -1,0 +1,13 @@
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\bin\Debug\netcoreapp3.1\kolkoikrzyzyk.exe
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\bin\Debug\netcoreapp3.1\kolkoikrzyzyk.deps.json
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\bin\Debug\netcoreapp3.1\kolkoikrzyzyk.runtimeconfig.json
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\bin\Debug\netcoreapp3.1\kolkoikrzyzyk.runtimeconfig.dev.json
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\bin\Debug\netcoreapp3.1\kolkoikrzyzyk.dll
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\bin\Debug\netcoreapp3.1\kolkoikrzyzyk.pdb
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\obj\Debug\netcoreapp3.1\kolkoikrzyzyk.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\obj\Debug\netcoreapp3.1\kolkoikrzyzyk.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\obj\Debug\netcoreapp3.1\kolkoikrzyzyk.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\obj\Debug\netcoreapp3.1\kolkoikrzyzyk.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\obj\Debug\netcoreapp3.1\kolkoikrzyzyk.dll
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\obj\Debug\netcoreapp3.1\kolkoikrzyzyk.pdb
+C:\Users\user\Documents\GitHub\Kolkoikrzyzyk\kolkoikrzyzyk\kolkoikrzyzyk\obj\Debug\netcoreapp3.1\kolkoikrzyzyk.genruntimeconfig.cache
