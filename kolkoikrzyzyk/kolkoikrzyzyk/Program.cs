@@ -27,7 +27,8 @@ namespace kolkoikrzyzyk
                 board[row, col] = player;
 
                 //warunek wygranej (8 możliwości) i remisu
-
+                Console.Clear();
+                Print(board);
                 //rząd wygrana
                 if (player == board[0, 0] && player == board[0, 1] && player == board[0, 2])
                 {
@@ -62,7 +63,7 @@ namespace kolkoikrzyzyk
                 }
                 //ukosy wygrana
                 else if (player == board[0, 0] && player == board[1, 1] && player == board[2, 2])
-                {
+                {                    
                     Console.WriteLine(player + " wygrał/a grę!");
                     Console.ReadKey();
                 }
@@ -73,7 +74,7 @@ namespace kolkoikrzyzyk
                 }
                 //remis
                 else
-                    Console.WriteLine("Remis!");
+                Console.WriteLine("Remis!");
 
                 player = ChangeTurn(player);
 
