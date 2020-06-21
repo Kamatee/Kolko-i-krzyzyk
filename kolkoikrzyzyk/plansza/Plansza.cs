@@ -1,9 +1,15 @@
 ﻿using System;
 
 namespace Plansza
-{
+{   
+    public enum player
+    {
+        X,
+        O
+    }
     public class Board
     {
+        
         private char[,] gameboard = new char[3, 3];
 
         public Board()
@@ -32,6 +38,7 @@ namespace Plansza
         }
         public int CzyWygrana(char player)
         {
+            //rząd wygrana
             if (player == gameboard[0, 0] && player == gameboard[0, 1] && player == gameboard[0, 2])
             {
                 return 1;

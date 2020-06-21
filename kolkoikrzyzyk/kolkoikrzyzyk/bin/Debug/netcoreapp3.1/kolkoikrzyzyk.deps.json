@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "kolkoikrzyzyk/1.0.0": {
+        "dependencies": {
+          "Plansza": "1.0.0"
+        },
+        "runtime": {
+          "kolkoikrzyzyk.dll": {}
+        }
+      },
+      "Plansza/1.0.0": {
+        "runtime": {
+          "Plansza.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "kolkoikrzyzyk/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Plansza/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
