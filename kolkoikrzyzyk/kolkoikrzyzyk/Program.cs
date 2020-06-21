@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Data;
+using Plansza;
+    
 
 namespace kolkoikrzyzyk
 {
@@ -8,109 +11,51 @@ namespace kolkoikrzyzyk
         {
             //Wersja dla dwóch graczy
 
+            Board board = new Board();
+            board.Print();
             char player = 'X';
-            char[,] board = new char[3, 3];
-            Initialize(board);
+
 
 
             while (true)
             {
                 Console.Clear();
-                Print(board);
-
-
-                Console.Write("Wybierz rząd: ");
-                int row = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Kolejka gracza {player}\n");
+                board.Print();
+                int row, col;
+                Console.Write("\nWybierz rząd: ");
+                row = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Wybierz kolumnę: ");
-                int col = Convert.ToInt32(Console.ReadLine());
+                col = Convert.ToInt32(Console.ReadLine());
 
-                board[row, col] = player;
-
-                //warunek wygranej (8 możliwości) i remisu
-                Console.Clear();
-                Print(board);
-                //rząd wygrana
-                if (player == board[0, 0] && player == board[0, 1] && player == board[0, 2])
+                while (board.czyPuste(row, col) == false)
                 {
-                    Console.WriteLine(player + " wygrał/a grę!");
-                    Console.ReadKey();
+                    Console.WriteLine("Błąd! Wybrana komórka jest już zajęta!");
+                    Console.Write("Wybierz rząd: ");
+                    row = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Wybierz kolumnę: ");
+                    col = Convert.ToInt32(Console.ReadLine());
                 }
-                else if (player == board[1, 0] && player == board[1, 1] && player == board[1, 2])
+                board.ustawZnak(row, col, player);
+                if(board.CzyWygrana(player) == 1)
                 {
-                    Console.WriteLine(player + " wygrał/a grę!");
-                    Console.ReadKey();
+                    Console.WriteLine($"Gracz {player} wygrał grę!");
+                    board.Print();
+                    break;
                 }
-                else if (player == board[2, 0] && player == board[2, 1] && player == board[2, 2])
+                else if(board.CzyWygrana(player)== 2)
                 {
-                    Console.WriteLine(player + " wygrał/a grę!");
-                    Console.ReadKey();
+                    Console.WriteLine("Remis!");
+                    board.Print();
+                    break;
                 }
-                //kolumna wygrana
-                else if (player == board[0, 0] && player == board[1, 0] && player == board[2, 0])
-                {
-                    Console.WriteLine(player + " wygrał/a grę!");
-                    Console.ReadKey();
-                }
-                else if (player == board[0, 1] && player == board[1, 1] && player == board[2, 1])
-                {
-                    Console.WriteLine(player + " wygrał/a grę!");
-                    Console.ReadKey();
-                }
-                else if (player == board[0, 2] && player == board[1, 2] && player == board[2, 2])
-                {
-                    Console.WriteLine(player + " wygrał/a grę!");
-                    Console.ReadKey();
-                }
-                //ukosy wygrana
-                else if (player == board[0, 0] && player == board[1, 1] && player == board[2, 2])
-                {                    
-                    Console.WriteLine(player + " wygrał/a grę!");
-                    Console.ReadKey();
-                }
-                else if (player == board[0, 2] && player == board[1, 1] && player == board[2, 1])
-                {
-                    Console.WriteLine(player + " wygrał/a grę!");
-                    Console.ReadKey();
-                }
-                //remis
-                else
-                Console.WriteLine("Remis!");
-
                 player = ChangeTurn(player);
-
-                
-
             }
    
         }
 
 
-        //Plansza do gry
-        static void Initialize(char[,] board)
-        {
-            for (int row = 0; row < 3; row++)
-            {
-                for (int col = 0; col < 3; col++)
-                {
-                    board[row, col] = ' ';
-                }
-            }
-        }
-
-        static void Print(char[,] board)
-        {
-            Console.WriteLine("   | 0 | 1 | 2 |");
-            for (int row = 0; row < 3; row++)
-            {
-                Console.Write(" " + row + " | ");
-                for (int col = 0; col < 3; col++)
-                {
-                    Console.Write(board[row, col]);
-                    Console.Write(" | ");
-                }
-                Console.WriteLine();
-            }
-        }
+       
         //Zmiana tury
         static char ChangeTurn(char currentPlayer)
         {
@@ -123,5 +68,8 @@ namespace kolkoikrzyzyk
                 return 'X';
             }
         }
+        //Sprawdź czy dane pole jest zajęte
+        
+            
     }
 }

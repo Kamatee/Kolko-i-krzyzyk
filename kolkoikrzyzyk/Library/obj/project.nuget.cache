@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PplCWGhsYu8HMOq0uPo2l6iQCtyXA2O0esnZSsxajrdrVOY/2290wWV//IzbaZQshYjyTw1/vixWn23/ja0yEw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\Kolkoikrzyzyk\\kolkoikrzyzyk\\Library\\kolkokrzy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
